@@ -1,10 +1,13 @@
 {
-  "name": "words-to-numbers",
+  "name": "@reecall/words-to-numbers",
   "description": "convert textual words to numbers with optional fuzzy text matching",
   "version": "1.5.1",
   "license": "MIT",
   "options": {
     "mocha": "--require scripts/mocha_runner src/**/__tests__/**/*.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "start": "babel --watch --plugins \"transform-runtime\" src --ignore __tests__ --out-dir ./dist",
@@ -32,12 +35,12 @@
   },
   "author": "Finn Fitzsimons <hello@finn.works>",
   "bugs": {
-    "url": "https://github.com/finnfiddle/words-to-numbers/issues"
+    "url": "https://github.com/reecall/words-to-numbers/issues"
   },
-  "homepage": "https://github.com/finnfiddle/words-to-numbers",
+  "homepage": "https://github.com/reecall/words-to-numbers",
   "repository": {
     "type": "git",
-    "url": "https://github.com/finnfiddle/words-to-numbers.git"
+    "url": "git+https://github.com/reecall/words-to-numbers.git"
   },
   "dependencies": {
     "babel-runtime": "6.x.x",
